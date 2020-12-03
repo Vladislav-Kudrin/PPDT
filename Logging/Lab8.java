@@ -1,4 +1,4 @@
-package Logging;
+package logging;
 
 import java.util.Scanner;
 import java.util.logging.Logger;
@@ -48,7 +48,7 @@ public class Lab8 {
             System.out.println(exceptionHandling(exception) + "Estimated result set as: " + estimatedResult);
         }
 
-        System.out.println("Result is: " + (result = (max7 == 0 || max5 ==0) ? max35 * max : (max7 * max5 > max35 * max) ? max7 * max5 : max35 * max) + ".");
+        System.out.println("Result is: " + (result = (max7 == 0 || max5 == 0) ? max35 * max : (max7 * max5 > max35 * max) ? max7 * max5 : max35 * max) + ".");
         System.out.println("Control is: " + ((result == estimatedResult) ? "passed." : "failed."));
 
 		logger.log(Level.INFO, "Lab8 is completed.");
